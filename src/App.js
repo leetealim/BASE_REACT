@@ -1,10 +1,20 @@
+import TagRule from "./components/1_jsxRule/tagRule";
+import ClassComponent, {
+  FnComponent_1,
+  FnComponent_2,
+} from "./components/2_component/ClassComponent";
+
 const App = () => {
   return (
-    <>
-      <h1>h 태그!</h1>
-      <h2>h 태그!</h2>
-      {/* <img src="#" /> */}
-    </>
+    <div>
+      {/* <TagRule />
+      => 1일차 */}
+
+      {/* <FnComponent_1 />
+      <FnComponent_2 /> */}
+
+      <ClassComponent />
+    </div>
   );
 };
 
