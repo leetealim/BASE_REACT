@@ -3,8 +3,12 @@ import ClassComponent, {
   FnComponent_1,
   FnComponent_2,
 } from "./components/2_component/ClassComponent";
+import { FoodMenu } from "./components/2_component/foodMenu";
 
 const App = () => {
+  // const menu = "텐동";
+  // => 변수를 예전에는 위로 올렸는데 안쪽에다가 적어야됨
+
   return (
     <div>
       {/* <TagRule />
@@ -13,7 +17,9 @@ const App = () => {
       {/* <FnComponent_1 />
       <FnComponent_2 /> */}
 
-      <ClassComponent />
+      {/* <ClassComponent /> */}
+
+      <FoodMenu />
     </div>
   );
 };
