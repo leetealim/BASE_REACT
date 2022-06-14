@@ -1,7 +1,12 @@
+const App = () => {
+  return (
+    <>
+      <h1>h 태그!</h1>
+      <h2>h 태그!</h2>
+      {/* <img src="#" /> */}
+    </>
+  );
+};
 
- const App = () => {
-    return <div>wow!</div>
- };
-
- export default App;
- 
+export default App;
+// => 내보내기
