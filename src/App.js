@@ -3,7 +3,33 @@ import ClassComponent, {
   FnComponent_1,
   FnComponent_2,
 } from "./components/2_component/ClassComponent";
-import { FoodMenu } from "./components/2_component/FoodMenu";
+// import { FoodMenu } from "./components/2_component/FoodMenu";
+import { Subject } from "./components/3_props/Subject";
+import { subjectDb, todayMenu } from "./db";
+import { TodayMenu } from "./components/3_props/TodayMenu";
+
+// const subjectDb = [
+//   {
+//     id: 0,
+//     SubjectTitie: "HTML",
+//   },
+//   {
+//     id: 1,
+//     SubjectTitie: "Css",
+//   },
+//   {
+//     id: 2,
+//     SubjectTitie: "Js",
+//   },
+//   {
+//     id: 3,
+//     SubjectTitie: "Node",
+//   },
+//   {
+//     id: 4,
+//     SubjectTitie: "React",
+//   },
+// ];
 
 const App = () => {
   // const menu = "텐동";
@@ -14,24 +40,21 @@ const App = () => {
       {/* <TagRule />
       => 1일차 */}
 
+      {/* <FnComponent />
       {/* <FnComponent_1 />
       <FnComponent_2 /> */}
-
       {/* <ClassComponent /> */}
-
-      {/* *props
-      => <컴포넌트 프롭스명 = "값" /> */}
-
-      <h3>아침메뉴</h3>
-      <FoodMenu menuName="계란밥" sideMenu="물" />
-
-      <h3>점심메뉴</h3>
-      <FoodMenu menuName="큐브스테이크" sideMenu="사이다" />
-
-      <h3>저녁메뉴</h3>
-      <FoodMenu menuName="스시" sideMenu="정종" />
-
       {/* 2일차 */}
+
+      {/* <Menus /> */}
+
+      {/* <Subject sub={subjectDb} />
+      <Subject me={menu_1} />
+      <Subject me={sid_1} /> */}
+
+      {/* => js에서 전달할떈 무조건 중괄호{} 넣어주기 */}
+      <TodayMenu menu={todayMenu} />
+      {/* 3일차 */}
     </div>
   );
 };

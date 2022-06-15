@@ -17,7 +17,8 @@ export const FoodMenu = ({ menuName, sideMenu }) => {
       {/* 오늘의 메뉴는 <i>{menuName}</i> 사이드 메뉴는 <i>{sideMenu}</i>
       오늘의 메뉴는 <i>{menuName}</i> 사이드 메뉴는 <i>{sideMenu}</i> */}
       <div>
-        오늘의 메뉴는 <i className="menu"> {menuName} </i> 사이드 메뉴는{" "}
+        오늘의 메뉴는 <i className="menu"> {menuName} </i> 사이드 메뉴는
+        {sideMenu}
         <i ClassName="sideMenu"> </i>
       </div>
     </div>
