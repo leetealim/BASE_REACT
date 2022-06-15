@@ -3,7 +3,7 @@ import ClassComponent, {
   FnComponent_1,
   FnComponent_2,
 } from "./components/2_component/ClassComponent";
-import { FoodMenu } from "./components/2_component/foodMenu";
+import { FoodMenu } from "./components/2_component/FoodMenu";
 
 const App = () => {
   // const menu = "텐동";
@@ -19,7 +19,19 @@ const App = () => {
 
       {/* <ClassComponent /> */}
 
-      <FoodMenu />
+      {/* *props
+      => <컴포넌트 프롭스명 = "값" /> */}
+
+      <h3>아침메뉴</h3>
+      <FoodMenu menuName="계란밥" sideMenu="물" />
+
+      <h3>점심메뉴</h3>
+      <FoodMenu menuName="큐브스테이크" sideMenu="사이다" />
+
+      <h3>저녁메뉴</h3>
+      <FoodMenu menuName="스시" sideMenu="정종" />
+
+      {/* 2일차 */}
     </div>
   );
 };
