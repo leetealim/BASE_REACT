@@ -7,6 +7,9 @@ import ClassComponent, {
 import { Subject } from "./components/3_props/Subject";
 import { subjectDb, todayMenu } from "./db";
 import { TodayMenu } from "./components/3_props/TodayMenu";
+import { FoodMenu } from "./components/4_map/FoodMenu";
+import { Contents } from "./components/4_map/Contents";
+import { GlobalStyeld } from "./styles/GlobalStyeld";
 
 // const subjectDb = [
 //   {
@@ -37,6 +40,7 @@ const App = () => {
 
   return (
     <div>
+      <GlobalStyeld />
       {/* <TagRule />
       => 1일차 */}
 
@@ -53,8 +57,12 @@ const App = () => {
       <Subject me={sid_1} /> */}
 
       {/* => js에서 전달할떈 무조건 중괄호{} 넣어주기 */}
-      <TodayMenu menu={todayMenu} />
+      {/* <TodayMenu menu={todayMenu} /> */}
       {/* 3일차 */}
+
+      {/* <FoodMenu menus={todayMenu} /> */}
+      <Contents />
+      {/* 4일차 */}
     </div>
   );
 };
