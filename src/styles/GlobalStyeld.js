@@ -10,6 +10,11 @@ export const GlobalStyeld = createGlobalStyle`
     *{
         box-sizing : border-box;
     };
+
+    a{
+      text-decoration: none;
+      color : white;
+    }
 `;
 
 // -[x] npm i styled-styledComponents

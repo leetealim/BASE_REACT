@@ -5,12 +5,12 @@ import ClassComponent, {
 } from "./components/2_component/ClassComponent";
 // import { FoodMenu } from "./components/2_component/FoodMenu";
 import { Subject } from "./components/3_props/Subject";
-import { subjectDb, todayMenu } from "./db";
+import { conDb, subjectDb, todayMenu } from "./db";
 import { TodayMenu } from "./components/3_props/TodayMenu";
 import { FoodMenu } from "./components/4_map/FoodMenu";
 import { Contents } from "./components/4_map/Contents";
 import { GlobalStyeld } from "./styles/GlobalStyeld";
-
+import { ConEx } from "./components/4_map/ConEx";
 // const subjectDb = [
 //   {
 //     id: 0,
@@ -61,8 +61,10 @@ const App = () => {
       {/* 3일차 */}
 
       {/* <FoodMenu menus={todayMenu} /> */}
-      <Contents />
+      {/* <Contents /> */}
       {/* 4일차 */}
+
+      <ConEx con={conDb} />
     </div>
   );
 };
