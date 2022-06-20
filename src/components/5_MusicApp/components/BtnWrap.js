@@ -8,8 +8,29 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
-const SBtnWrap = styled.div``;
-const Items = styled.div``;
+const SBtnWrap = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+`;
+const Items = styled.div`
+  &:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: feComponentTransfer;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  &:nth-child(3):hover {
+    background-color: purple;
+  }
+`;
 
 export const BtnWrap = () => {
   return (

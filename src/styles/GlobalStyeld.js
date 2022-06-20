@@ -11,9 +11,14 @@ export const GlobalStyeld = createGlobalStyle`
         box-sizing : border-box;
     };
 
-    a{
+    /* a{
       text-decoration: none;
       color : white;
+    } */
+
+    body{
+      /* background-color: #555; */
+      
     }
 `;
 

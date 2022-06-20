@@ -12,6 +12,7 @@ import { Contents } from "./components/4_map/Contents";
 import { GlobalStyeld } from "./styles/GlobalStyeld";
 import { ConEx } from "./components/4_map/ConEx";
 import { MusicApp } from "./components/5_MusicApp/MusicApp";
+
 // const subjectDb = [
 //   {
 //     id: 0,
@@ -66,7 +67,12 @@ const App = () => {
       {/* 4일차 */}
 
       {/* <ConEx con={conDb} /> */}
-      <MusicApp />
+      {/* <MusicApp /> */}
+
+      {/* <ClssEvent />
+      <FnEvent /> */}
+      <Box />
+      {/* 5일차 */}
     </div>
   );
 };
