@@ -78,3 +78,6 @@ export const ConEx = ({ con }) => {
 /* *background 축약
 => background : url() no-repeat 위치/크기
 첫번째 자리는 이미지 경로 두번째는 반복 세번째는 위치/크기 */
+
+
+
