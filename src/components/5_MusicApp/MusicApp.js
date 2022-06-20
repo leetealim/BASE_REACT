@@ -21,16 +21,30 @@ const Section = styled.div`
   background-color: #1d1d1d;
   border-radius: 25px;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  /* => 축을 세로로 변경해준는거 */
+  align-items: center;
 `;
 
-const CoverImg = styled.div``;
+const CoverImg = styled.div`
+  width: 90%;
+  height: 280px;
+  border-radius: 25px;
+  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
+`;
 
 export const MusicApp = () => {
   return (
     <Wrap>
       <Section>
         <Header />
-        <CoverImg />
+        <CoverImg
+          style={{
+            background: `url(https://m.facebook.com/bandJAURIM/photos/a.210079452373006/1179585568755718/?type=3&locale2=hi_IN) no-repeat center / cover`,
+          }}
+        />
         <TitleWrap />
         <PlayWrap />
         <BtnWrap />

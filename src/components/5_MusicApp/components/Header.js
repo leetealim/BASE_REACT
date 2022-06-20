@@ -7,11 +7,11 @@ display : flex
 justify-content : space-between
 `;
 const Menus = styled.div`
-width : 40px
+width : 100%;
 height: 40px;
 border-radius : 50%;
 display : flex
-justify-content : space-between
+justify-content : space-between;
 align-items : center;
 &:nth-child(1){
     background-color: white;
